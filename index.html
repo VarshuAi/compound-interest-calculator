@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Visualizer — Glassmorphism Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-row">
+                <span class="logo-emoji">📈</span>
+                <div class="title-col">
+                    <h1>Compound Interest Visualizer</h1>
+                    <p class="tagline">Calculate compound growth projections and compile timeline stats.</p>
+                </div>
+            </div>
+            <div class="badge">business</div>
+        </header>
+
+        <main class="workspace-card">
+            
+            <input type="number" id="ci-p" value="1000" placeholder="Principal ($)" style="width:100%; margin-bottom:8px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:12px;">
+                <input type="number" id="ci-r" value="8" placeholder="Interest Rate %">
+                <input type="number" id="ci-t" value="10" placeholder="Years">
+            </div>
+            <button class="btn" onclick="calcCI()">Project Future Values</button>
+            <div id="ci-res" style="margin-top:16px; font-size:18px; color:var(--accent);"></div>
+        
+        </main>
+        
+        <footer class="app-footer">
+            <p>Created as a premium portfolio piece by <a href="https://github.com/VARSHAN69" target="_blank">@VARSHAN69</a></p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
