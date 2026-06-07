@@ -38,7 +38,7 @@ version: 1.0
 type: Repository
 author: VarshuAi
 description: >
-  Calculate compound growth projections and compile timeline stats.
+  name: compound-interest-calculator version: 1.0 type: Repository author: VarshuAi description: >   Calculate compound growth projections and compile timeline stats. primary_tech: CSS
 primary_tech: CSS
 ```
 
